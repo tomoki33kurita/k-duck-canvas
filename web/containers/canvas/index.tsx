@@ -43,7 +43,7 @@ export const Canvas: React.FC = () => {
         }}
         onClick={(e) => handleCoordinate(e)}
       />
-      <DevTool {...{ cordinateX, cordinateY, isCopy, setCopy }} />
+      {/* <DevTool {...{ cordinateX, cordinateY, isCopy, setCopy }} /> */}
     </div>
   );
 };
