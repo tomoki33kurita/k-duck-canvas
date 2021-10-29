@@ -1,13 +1,13 @@
 export const kDuck = (ctx: CanvasRenderingContext2D) => {
-  comb(ctx, "#383838");
-  rightArm(ctx, "#F2C86B");
-  head(ctx, "#F2C86B");
-  eyes(ctx, "#eee");
-  tail(ctx, "#F2C86B");
-  rightFoot(ctx, "#C4C2BB");
-  bodyAndLeftArm(ctx, "#F2C86B");
-  beak(ctx, "#C4C2BB");
-  leftFoot(ctx, "#C4C2BB");
+  comb(ctx, "#383838"); // トサカ
+  rightArm(ctx, "#F2C86B"); // 右腕
+  head(ctx, "#F2C86B"); // 頭
+  eyes(ctx, "#eee"); // 両目
+  tail(ctx, "#F2C86B"); // 尻尾
+  rightFoot(ctx, "#C4C2BB"); // 右足
+  bodyAndLeftArm(ctx, "#F2C86B"); // 胴体と左腕
+  beak(ctx, "#C4C2BB"); // くちばし
+  leftFoot(ctx, "#C4C2BB"); // 左足
 };
 
 // トサカ
@@ -31,7 +31,7 @@ const comb = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.closePath();
 };
 
-// 目
+// 両目
 const eyes = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.beginPath();
   ctx.strokeStyle = "#383838";
@@ -89,6 +89,7 @@ const beak = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.closePath();
 };
 
+// 頭
 const head = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.beginPath();
   ctx.strokeStyle = "#383838";
@@ -104,6 +105,7 @@ const head = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.closePath();
 };
 
+// 胴体と左腕
 const bodyAndLeftArm = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.beginPath();
   ctx.strokeStyle = "#383838";
@@ -135,6 +137,7 @@ const bodyAndLeftArm = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.closePath();
 };
 
+// 右腕
 const rightArm = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.beginPath();
   ctx.strokeStyle = "#383838";
@@ -152,6 +155,7 @@ const rightArm = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.closePath();
 };
 
+// 左足
 const leftFoot = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.beginPath();
   ctx.strokeStyle = "#383838";
@@ -169,6 +173,7 @@ const leftFoot = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.closePath();
 };
 
+// 右足
 const rightFoot = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.beginPath();
   ctx.strokeStyle = "#383838";
@@ -184,6 +189,7 @@ const rightFoot = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.closePath();
 };
 
+// 尻尾
 const tail = (ctx: CanvasRenderingContext2D, fillColor: string) => {
   ctx.beginPath();
   ctx.strokeStyle = "#383838";
